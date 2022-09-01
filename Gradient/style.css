@@ -1,0 +1,471 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    scroll-behavior: smooth;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+    font-family: 'Kumbh Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #131313;
+    position: sticky;
+  top: 0;
+  z-index: 999;
+  height: 65px;
+}
+
+.logo{
+    padding-left: 3.5rem;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 400;
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+}
+
+.navbar ul{
+ padding-right: 3.5rem;
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+
+}
+
+.navbar ul li{
+    list-style: none;
+}
+.navbar ul li a{
+ padding: .4rem 1.5rem;
+ text-decoration: none;
+ color: white;
+ transition: all 0.3s ease;
+
+}
+#signup{
+   box-sizing: border-box;
+   border-radius: 5px;
+   background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+   transition: all 0.3s linear;
+
+}
+.navbar ul li a:hover{
+    color: #9518fc;
+}
+#signup:hover{
+    color: white;
+    background: #f33665;
+}
+
+.homepage{
+width: 100%;
+height:88.6vh;
+background: black;
+text-align: center;
+
+}
+.content{
+    position: relative;
+    top:35%;
+}
+.heading{
+    color: white;
+    font-size: 4.5rem;
+    font-weight: 700;
+}
+
+.content div span{
+    background-image: linear-gradient(to top, #ff0844,#e64b04 0%, #ffb199 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.purple{
+    letter-spacing: 2px;
+    padding-top: 10px;
+    font-size: 2.5rem;
+    background-image: linear-gradient(to right, #9518fc 70%,#fff 30%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+}
+.content button{
+    margin-top: 25px;
+    padding: 15px 40px;
+    font-size: x-large;
+    border: none;
+    background: none;
+    text-decoration: none;
+    box-sizing: border-box;
+   border-radius: 5px;
+   background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+color: white;
+cursor: pointer;
+   transition: all 0.3s linear;
+}
+.content button:hover{
+color: white;
+background: #f33665;
+}
+.aboutpage{
+    width: 100%;
+    height:100vh;
+    background: #0a0a0a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.col1{
+
+    width: 40%;
+    height: 70%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, blue,purple,pink);
+}
+.col1 i{
+    color: white;
+    text-align: center;
+}
+.col2{
+   position: relative;
+   top:4%;
+left: 5%;
+    width: 50%;
+    height: 70%;
+}
+.one{
+    padding-top: 25px;
+    color:rgb(160, 27, 71);
+    font-size:x-large;
+    font-weight: 700;
+}
+.two{
+    padding-top: 25px;
+
+    background-image: linear-gradient(to right, #9518fc 70%,#fff 30%,pink);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size:3rem;
+    font-weight: 700;
+}
+.three{
+    padding-top: 25px;
+
+    color: white;
+    font-size:larger;
+    font-weight: 700;
+}
+.col2 button{
+    padding-top: 25px;
+
+    margin-top: 25px;
+    padding: 15px 40px;
+    font-size: x-large;
+    border: none;
+    background: none;
+    text-decoration: none;
+    box-sizing: border-box;
+   border-radius: 5px;
+   background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+color: white;
+cursor: pointer;
+   transition: all 0.3s linear;
+}
+
+.col2 button:hover{
+    color: white;
+background: #f33665;
+}
+
+.servicepage{
+    width: 100%;
+    height:100vh;
+    background: black;
+}
+h1{
+    text-align: center;
+    padding-top: 70px;
+    font-size: xx-large;
+    font-weight: 700;
+    background-image: linear-gradient(to left, #d41142 0%, #e48c71 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cards{
+    padding-top: 50px;
+    width:100%;
+    display: flex;
+    align-items: center;
+}
+
+.colone{
+   margin-left: 7%;
+    width: 20%;
+    height:60vh;
+    background-image: linear-gradient(to right, #ff0844 0%, #f7673c 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+transition: all .3s ease-in;
+
+}
+
+.coltwo{
+    width: 20%;
+    margin-left: 2%;
+    background-image: linear-gradient(to top , #00dbde 0%, #fc00ff 100%);
+    height:60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+transition: all .3s ease-in;
+
+}
+.colthree{
+    width: 20%;
+    margin-left: 2%;
+    background-image: linear-gradient(to left, #28ad45 0%, #eccacf 100%);
+    height:60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+transition: all .3s ease-in;
+
+}
+.colfour{
+    width: 20%;
+    margin-left: 2%;
+
+    height:60vh;
+    background: linear-gradient(to bottom, #aec73f, #5f59b3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+transition: all .3s ease-in;
+
+}
+
+.cards div h2{
+color: white;
+font-size: x-large;
+font-weight: 700;
+}
+
+.cards div h3{
+    color: white;
+    font-size:medium;
+    padding-top: 10px;
+    font-weight: 700;
+    }
+
+.cards div button{
+        color: white;
+        font-size:small;
+        margin-top: 20px;
+       padding: 8px 12px;
+        font-weight: 700;
+        background: none;
+        border: none;
+        background-color:#0a0a0a ;
+transition: all .3s ease-in;
+
+}
+.cards div button:hover{
+    background-color:white ;
+    color: #0a0a0a;
+
+}
+.colone:hover{
+    width: 23%;
+    height: 70vh;
+    background: linear-gradient(to bottom, #74756e, #2b922b);
+    margin-left: 5%;
+
+
+}
+.coltwo:hover{
+    width: 23%;
+    height: 70vh;
+    margin-left: 1%;
+
+    background: linear-gradient(to top, #255868, #e2765b);
+
+}
+.colthree:hover{
+    width: 23%;
+    height: 70vh;
+    margin-left: 1%;
+
+    background: linear-gradient(to right, #6e2e66, #2bf881);
+
+}
+.colfour:hover{
+    width: 23%;
+    height: 70vh;
+    margin-left: 1%;
+
+    background: linear-gradient(to left, #c4db40, #362147);
+
+}
+.signuppage{
+    width: 100%;
+    height:100vh;
+    background: #0a0a0a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signuppage .column1{
+    position: relative;
+    top:4%;
+ left: 5%;
+     width: 50%;
+     height: 70%;
+ }
+ .signuppage .column1 .one1{
+     padding-top: 25px;
+     color:rgb(160, 27, 71);
+     font-size:x-large;
+     font-weight: 700;
+ }
+ .signuppage .column1 .two2{
+     padding-top: 25px;
+ 
+     background-image: linear-gradient(to right, #9518fc 70%,#fff 30%,pink);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     font-size:3rem;
+     font-weight: 700;
+ }
+ .signuppage .column1 .three3{
+     padding-top: 25px;
+ 
+     color: white;
+     font-size:larger;
+     font-weight: 700;
+ }
+ .signuppage .column1 button{
+     padding-top: 25px;
+ 
+     margin-top: 25px;
+     padding: 15px 40px;
+     font-size: x-large;
+     border: none;
+     background: none;
+     text-decoration: none;
+     box-sizing: border-box;
+    border-radius: 5px;
+    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+ color: white;
+ cursor: pointer;
+    transition: all 0.3s linear;
+ }
+ 
+ .signuppage .column1 button:hover{
+     color: white;
+ background: #f33665;
+ }
+
+ .signuppage .column2{
+
+    width: 40%;
+    height: 70%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, blue,purple,pink);
+}
+.signuppage .column2 i{
+    color: white;
+    text-align: center;
+}
+footer{
+    width: 100%;
+    height:35vh;
+    background: #131313;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div h4{
+font-size: larger;
+font-weight: 700;
+color: white;
+padding-bottom: 15px;
+cursor: pointer;
+}
+
+
+footer div h5{
+    font-size: small;
+    font-weight: 400;
+    color: white;
+    cursor: pointer;
+    }
+
+.about{
+    padding-right: 50px;
+}
+.contact{
+    position: relative;
+    bottom:8px;
+    padding-right: 50px;
+}
+.videos{
+    position: relative;
+    bottom:15px;
+    padding-right: 50px;
+}
+.copy{
+    width: 100%;
+    height:5vh;
+    background: #131313;
+   text-align: center;
+   color:white;
+}
+.copy span{
+    padding-left: 10px;
+    cursor: pointer;
+}
+.bars{
+    color: white;
+    display: none;
+    cursor: pointer;
+}
