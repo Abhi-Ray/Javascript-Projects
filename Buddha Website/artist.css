@@ -1,0 +1,246 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html{
+  font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    height:100vh;
+    width:100%;
+    position:relative;
+    background-color:#191513;
+  }
+  .navbar{
+      
+      width: 95%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: auto;
+  }
+  
+  .logo img{
+      cursor: pointer;
+      width: 50px;
+      margin:15px 0;
+  }
+  
+  nav ul li{
+     display: inline-block;
+     margin-right: 30px;
+  }
+  nav ul li a{
+      text-decoration: none;
+      color: #999;
+      font-size: 13px;
+      padding: 5px 15px;
+  
+  }
+  
+  nav ul li a:hover{
+  cursor: pointer;
+  color:#fff;
+  border-bottom: 3px solid #eea16d;
+  
+  
+  }
+  .trigger_artist{
+      cursor: pointer;
+      color:#fff;
+      border-bottom: 3px solid #eea16d;
+  }
+
+  .social-links{
+    position: absolute;
+    right: 30px;
+    top:50%;
+    transform:translateY(-50%);
+
+}
+
+
+.social-links img{
+   width:20px;
+   display: block;
+   margin:25px 0;
+   transition: width, 5s, ease-in-out;
+
+}
+
+
+.social-links img:hover{
+    width:30px;
+    position: relative;
+}
+
+
+
+.heading{
+    width: 20%;
+    padding: 0% 40%;
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 1.5px;
+    color: #999;
+    font-weight: 700;
+   
+}
+h1{
+   
+cursor: pointer;
+
+}
+h1:hover{
+    color: #fff;
+    border-bottom:solid 5px#eea16d;
+}
+
+.row{
+    width: 80%;
+    padding: 3% 9%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.image img{
+    width: 200px;
+    height: 200px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: solid 4.5px #999;
+    cursor: pointer;
+    transition: all .5s ease;
+ 
+
+}
+.image img:hover{
+    border: solid 4.5px #eea16d;
+    width: 220px;
+    height: 220px;
+}
+.image2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.image2 img{
+    width: 200px;
+    height: 200px;
+    box-sizing: border-box;
+    border: solid 4.5px #999;
+cursor: pointer;
+    border-radius: 50%;
+    transition: all .5s ease-in-out;
+
+}
+.image3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.image3 img{
+    width: 200px;
+    height: 200px;
+    border: solid 4.5px #999;
+cursor: pointer;
+    box-sizing: border-box;
+    border-radius: 50%;
+    transition: all .5s ease-in-out;
+
+}
+
+.col1 h2{
+    text-align: center;
+    padding-top: 20px;
+    font-size: x-large;
+font-weight: 500;
+color: #eea16d;
+}
+.col2 h2{
+    text-align: center;
+    padding-top: 20px;
+    font-size: x-large;
+font-weight: 500;
+color: #eea16d;
+}
+.col3 h2{
+    text-align: center;
+    padding-top: 20px;
+    font-size: x-large;
+font-weight: 500;
+color: #eea16d;
+}
+
+.col1 p{
+    padding-top: 10px;
+    font-size:15px;
+    color:#fff
+}
+.col2 p{
+    padding-top: 10px;
+    font-size:15px;
+    color:#fff
+}.col3 p{
+    padding-top: 10px;
+    font-size:15px;
+    color:#fff
+}
+.image2 img:hover{
+    border: solid 4.5px #eea16d;
+    width: 220px;
+    height: 220px;
+}
+.image3 img:hover{
+    border: solid 4.5px #eea16d;
+    width: 220px;
+    height: 220px;
+}
