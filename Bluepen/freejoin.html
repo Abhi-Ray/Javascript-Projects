@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Join As Freelancer</title>
+    <link
+      href="https://fonts.cdnfonts.com/css/helvetica-neue-9"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="freejoin.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/fontawesome.min.css"
+      integrity="sha512-cHxvm20nkjOUySu7jdwiUxgGy11vuVPE9YeK89geLMLMMEOcKFyS2i+8wo0FOwyQO/bL8Bvq1KMsqK4bbOsPnA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" type="image/png" href="images/pen.png" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="nav">
+      <img src="images/logo.png" alt="logo" />
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li>
+          <a href=""
+            >About Us <span><i class="fa-solid fa-caret-down"></i></span
+          ></a>
+          <ul class="fdrop">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="how.html">How it works</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="project.html">Projects</a></li>
+          </ul>
+        </li>
+        <li><a href="freelog.html">Freelancer Login </a></li>
+        <li>
+          <a href=""
+            >User Login <span><i class="fa-solid fa-caret-down"></i></span
+          ></a>
+          <ul class="fdrop">
+            <li><a href="signup.html">Sign Up</a></li>
+            <li><a href="login.html">Login</a></li>
+          </ul>
+        </li>
+        <li><a href="submit.html">Submit Assignment</a></li>
+        <li>
+          <a href=""
+            >Join Team Bluepen
+            <span><i class="fa-solid fa-caret-down"></i></span
+          ></a>
+          <ul class="fdrop">
+            <li><a href="intern.html">Intern Registration</a></li>
+            <li><a href="freereg.html">Freelance Registration</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="row">
+      <div class="col1">
+        <h1>
+            Project Mananger <br> Intern
+        </h1>
+        <img src="images/gp.jpg" alt="" />
+      </div>
+      <div class="col2">
+        <p>1. Personal Details</p>
+        <form action="">
+          <div>
+            <span><label for="first" class="first">First Name</label></span
+            ><span><label for="last" class="last">Last Name</label></span>
+          </div>
+          <div>
+            <span><input type="text" id="first" name="first" /></span>
+            <span><input type="text" id="last" name="last" /></span>
+          </div>
+          <div>
+            <span><label for="email" class="email">Email Address</label></span>
+            <span> <label for="gender" class="gender">Gender</label></span>
+          </div>
+          <div>
+            <span><input type="email" id="email" /></span>
+            <span
+              ><input type="radio" id="male" value="male" name="gender" />
+              <label for="male" class="male">Male</label>
+              <input type="radio" id="female" value="female" name="gender" />
+              <label for="male" class="female">Female</label>
+            </span>
+          </div>
+          <div>
+            <span><label for="mob" class="mob">Mobile Number</label></span
+            ><span><label for="num" class="num">WhatsApp Number</label></span>
+          </div>
+          <div>
+            <span><input type="tel" id="mob" name="mob" /></span>
+            <span><input type="tel" id="num" name="num" /></span>
+          </div>
+          <div>
+            <span><label for="address" class="address">Address</label></span>
+          </div>
+          <div>
+            <span
+              ><input type="url" id="address" name="address" id="address"
+            /></span>
+          </div>
+          <div>
+            <span><label for="street" class="street">Street</label></span
+            ><span><label for="City" class="City">City</label></span>
+          </div>
+          <div>
+            <span><input type="text" id="street" name="street" /></span>
+            <span><input type="text" id="City" name="City" /></span>
+          </div>
+          <div>
+            <span><label for="state" class="state">State</label></span
+            ><span><label for="post" class="post">Postal Code</label></span>
+          </div>
+          <div>
+            <span><input type="text" id="state" name="state" /></span>
+            <span><input type="text" id="post" name="post" /></span>
+          </div>
+          <hr class="hr">
+          <p class="spec">2. Speciality</p>
+          <div><label class="domain" for="domain">Which domain of Project Management are you interested in?</label></div>
+          <div><input type="domain" list="domain" name="domain" id="domain" placeholder="Which domain of Project Management">
+           </div>
+           <h6>Note: 1. Technical Domain means managing assignments and projects of programming/coding/software/IOT (basically technical domain)
+            <br> <br>
+            2. Non - Technical domain means managing assignments of commerce and arts related subjects like management, marketing, business, finance, etc. (basically non-technical domain) <br><br>
+            Subjects you specialize in <br>
+If your desired tag isn't present, press comma ',' to create it
+
+           </h6>
+           <input type="text" id="test">
+           <br>
+          <p id="type">Type of assignments you can do</p>
+          <div class="check">
+         <div> <input type="checkbox" id="essay">
+          <label for="essay">Essay Writing</label></div>
+         <div> <input type="checkbox" id="report">
+          <label for="report">Report Writing</label></div>
+        <div>  <input type="checkbox" id="lit">
+          <label for="lit">Literature Review</label></div>
+         <div> <input type="checkbox" id="bb">
+          <label for="bb">Blackbook</label></div>
+        <div>  <input type="checkbox" id="rp">
+          <label for="rp">Research Paper</label></div>
+         <div> <input type="checkbox" id="ps">
+          <label for="ps">Primary / Secondary Data Analysis</label></div>
+        <div>  <input type="checkbox" id="ra">
+          <label for="ra">Review Article</label></div>
+        <div>  <input type="checkbox" id="tw">
+          <label for="tw">Thesis Writing</label></div>
+         <div> <input type="checkbox" id="dw">
+          <label for="dw">Dissertation Writing</label></div>
+        <div>  <input type="checkbox" id="pro">
+          <label for="pro"> Programming / Coding Assignment</label></div>
+         <div> <input type="checkbox" id="iot">
+          <label for="iot"> IOT/Hardware Projects</label></div>
+         <div> <input type="checkbox" id="ppt">
+          <label for="ppt"> PPT Making</label></div>
+        <div>  <input type="checkbox" id="ed">
+          <label for="ed"> Engineering Drawing</label></div>
+        <div>  <input type="checkbox" id="cs">
+          <label for="cs">Case Studies</label></div>
+         <div> <input type="checkbox" id="qa">
+          <label for="qa">Question and Answer Based</label></div>
+          <div><input type="checkbox" id="sop">
+          <label for="sop">Statement Of Purpose</label></div>
+        <div>  <input type="checkbox" id="other">
+          <label for="other">Other</label></div>
+        </div>
+
+        <div><label class="qual" for="qual">Qualification</label></div>
+        <div><input type="url" id="qual" placeholder="BE, ME, Bsc, Msc, etc"></div>
+
+        <div><label class="hrs" for="hrs">Any specific working hours?</label></div>
+        <div><input type="url" id="hrs" placeholder="9AM-5PM, 6PM-9PM, etc."></div>
+        </form> 
+        <hr />
+        <p class="new">3. Experience</p>
+        <p id="new">Upload your Resume/CV here:</p>
+        <div><span><button type="submit" class="file">Choose files</button>
+        <span id="file">No files chosen</span></div>
+        <button class="submit" type="submit">Submit</button>
+      </div>
+    </div>
+    <footer>
+      <div class="info">
+        <div class="info1">
+          <h1>Bluepen</h1>
+          <a href="privacy.html">Privacy |</a>
+          <a href="terms.html">Terms |</a>
+          <a href="payment.html">Payment Policy |</a>
+          <a href="changes.html">Changes Policy |</a>
+          <a href="r&c.html">Refund and Cancellation Policy |</a>
+          <a href="t&c.html">Rewards Terms and Conditions |</a>
+        </div>
+        <div class="social">
+          <div class="fb">
+            <span class="so1"
+              ><a href="https://www.linkedin.com/in/abhishek-ray-62321120a"
+                ><i class="fa-brands fa-instagram"></i></a
+            ></span>
+
+            <span class="so1"
+              ><a href="https://www.linkedin.com/in/abhishek-ray-62321120a"
+                ><i class="fa-brands fa-linkedin"></i></a
+            ></span>
+          </div>
+          <div class="fb">
+            <span class="so1"
+              ><a href="https://www.linkedin.com/in/abhishek-ray-62321120a"
+                ><i class="fa-brands fa-facebook"></i></a
+            ></span>
+            <span class="so1"
+              ><a href="https://www.linkedin.com/in/abhishek-ray-62321120a"
+                ><i class="fa-brands fa-whatsapp"></i></a
+            ></span>
+          </div>
+          <div class="contact">
+            <span class="num"
+              ><a href="tel:+917247623323">+91 7247623323 |</a></span
+            >
+            <span class="mail"
+              ><a href="mailto:rayabhishek20112000@gmail.com"
+                >contact@bluepen.co.in</a
+              ></span
+            >
+          </div>
+        </div>
+      </div>
+      <div class="copyright">© 2023 Copyright: BluePen</div>
+    </footer>
+  </body>
+</html>
