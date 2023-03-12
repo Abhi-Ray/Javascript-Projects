@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- title -->
+
+    <title>Sign in to freeCodeCamp</title>
+
+    <!-- add css -->
+
+    <link rel="stylesheet" href="/css/sign.css" />
+
+    <!-- fontawesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- fevicon link -->
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+
+    <!-- font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="/html/index.html">
+        <img src="/images/FreeCodeCamp_logo.png" alt="freecodecamp"
+      /></a>
+    </header>
+    <main>
+      <form action="#">
+        <a
+          href="https://auth.freecodecamp.org/authorize?client_id=aUDv9jVqTfxBRE1l60NA5Af7yTCGE4cy&response_type=code&redirect_uri=https%3A%2F%2Fapi.freecodecamp.org%2Fauth%2Fauth0%2Fcallback&scope=openid%20profile%20email&audience=https%3A%2F%2Fauth.freecodecamp.org%2Fuserinfo&_csrf=L1yT7e0O-iXhMNHEaWcTBiIH3t7Ia1vV28g4&state=hKFo2SAtYmhnOGxrSFo0elhfTGtaOFhGbldlb0s1dFlXd2NoaqFupWxvZ2luo3RpZNkgTFdlWnMzVGlmLVVDVnJUVGs3TVdTdVpsR3FoWi11SEajY2lk2SBhVUR2OWpWcVRmeEJSRTFsNjBOQTVBZjd5VENHRTRjeQ&_intstate=deprecated&connection=google-oauth2&auth0Client=eyJuYW1lIjoiYXV0aDAuanMiLCJ2ZXJzaW9uIjoiOS4xOS4yIn0%3D"
+        >
+          <button type="submit">Continue with Google</button></a
+        >
+        <a
+          href="https://github.com/login/oauth/authorize?response_type=code&redirect_uri=https%3A%2F%2Fauth.freecodecamp.org%2Flogin%2Fcallback&scope=user%3Aemail&state=a2EmK_qvb8wBsxT8JM0vZPNYwNNoYToH&client_id=80a8e8840a91a529831e"
+        >
+          <button type="submit">Continue with Github</button></a
+        >
+        <div class="hori">
+          <div class="hori1"></div>
+          <p>or</p>
+          <div class="hori2"></div>
+        </div>
+        <div class="emails">
+          <input type="email" name="email" id="email" placeholder="email" />
+        </div>
+        <a
+          href="https://auth.freecodecamp.org/login?state=hKFo2SBQN0tia2kxalZkMnlsd24tUG1TeWI2RTJsekVsSUYzaaFupWxvZ2luo3RpZNkgSndrQ0wwejZXZzlKU0Mya0lmTGx0c2VZbVI2ODdqaDGjY2lk2SBhVUR2OWpWcVRmeEJSRTFsNjBOQTVBZjd5VENHRTRjeQ&client=aUDv9jVqTfxBRE1l60NA5Af7yTCGE4cy&protocol=oauth2&response_type=code&redirect_uri=https%3A%2F%2Fapi.freecodecamp.org%2Fauth%2Fauth0%2Fcallback&scope=openid%20profile%20email"
+        >
+          <button type="submit">Email me a sign in code</button></a
+        >
+      </form>
+    </main>
+    <footer>
+      <p>
+        freeCodeCamp is free and your account is private by default. We use your
+        email address to connect you to your account. <br /><br />
+        You must be at least 13 years old to create an account on freeCodeCamp.
+        <br /><br />
+        By continuing, you indicate that you have read and agree to
+        freeCodeCamp.org's
+        <a href="https://www.freecodecamp.org/terms"> Terms of Service </a>and
+        <a href="https://www.freecodecamp.org/privacy"> Privacy Policy</a>.
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,691 @@
+/* css reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+b, u, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* variable */
+:root{
+    --body-color:#F5F6F7;
+    --primary-color:#0a0a23;
+    --secondar-color:#3B3B4F;
+    --btn-color:#FFAF36;
+    --text-color:#1b1b32;
+    --light-color:#d0d0d5;
+}
+body{
+    background-color: var(--body-color);
+    font-family: 'Lato', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* header */
+header{
+    width: 100%;
+    height: auto;
+    background-color: var(--primary-color);
+    position:fixed;
+    top: 0;
+}
+.header{
+    background-color: var(--primary-color);
+}
+.head-container{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+
+    width: 50%;
+    padding: .3em 0;
+}
+.logo img{
+    width: 100%;
+}
+.nav-btn{
+    margin: .2em 0;
+}
+.nav-btn button{
+    margin-left: .5em;
+    height: 2.2em;
+    width: 2.2em;
+    background-color: transparent;
+    color: white;
+    border:.2em solid white;
+    font-size: 1rem;
+}
+
+#active-btn{
+    background-color: var(--btn-color);
+    border: .2em solid #d68203;
+    color: black;
+}
+
+/* navbar */
+
+.navbar,nav-list{
+    width: 90%;
+    margin:1.5em 1em ;
+    display: block;
+}
+.navbar input,.menu-btn,.login-btn{
+    background-color: var(--secondar-color);
+    border: none;
+    color: rgb(185, 185, 185);
+
+}
+.navbar form{
+    background-color: var(--secondar-color);
+    width: 100%;
+    padding: .3em;
+}
+.navbar input{
+    width: 80%;
+    padding: .5em 0 .5em .6em;
+    color: white;
+    font-size: 1rem;
+
+}
+#inp-btn{
+    border: none;
+    background: transparent;
+}
+.navbar input:focus{
+    outline: none;
+}
+::placeholder{
+    color: rgb(185, 185, 185);
+    font-size: 1rem;
+}
+
+.nav-list a,h3{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin: 1em 0 .8em 0; 
+    font-size: 1.25rem;
+}
+.margin{
+padding-bottom: 1em;}
+hr{
+    margin-left: -1em;
+    border: .5px solid rgba(124, 124, 124,.4);
+}
+#disable{
+    color: #7e7e7e;
+}
+.navbar{
+    display: none;
+}
+main{
+    width: 100%;
+    margin-top: 4em;
+}
+main h2{
+    font-size: 1.6rem;
+    margin: 1.5em 1em;
+    color: var(--text-color);
+    font-weight: 700;
+}
+main p{
+    font-size: 1.3rem;
+    margin: 1.5em 1em;
+    color: var(--text-color);
+    font-weight: 900;
+    letter-spacing: .06em;
+    line-height: 1.2em;
+}
+.svg{
+    width: 95%;
+    margin: 1em;
+}
+#apple-logo{
+    width: 10%;
+    margin-left: .5em;
+
+   fill: var(--secondar-color);
+}
+#google-logo{
+    width: 30%;
+    margin-left: 1em;
+   fill: var(--secondar-color);
+
+}
+#microsoft-logo{
+    width: 40%;
+    margin-left: 1em;
+   fill: var(--secondar-color);
+}
+#spotify-logo,#amazon-logo{
+    width: 35%;
+    margin:1em 0 1em 2em ;
+   fill: var(--secondar-color);
+}
+/* button */
+
+.btn{
+    width: 100%;
+    text-align: center;
+}
+.btn button{
+    width: 90%;
+    margin:.5em auto;
+    padding: .2em;
+    font-size: 2rem;
+    letter-spacing: .05em;
+    background-color: var(--btn-color);
+    border: .1em solid #d68203;
+    color: var(--primary-color);
+}
+ /* seen */
+ .seen{
+    width: 100%;
+    margin: 1em auto;
+    background-color: var(--secondar-color);
+ }
+ .seen p{
+    text-align: center;
+    padding: .6em;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--light-color);
+}
+.seen svg{
+    fill: var(--light-color);
+    padding: 1em 1em;
+}
+/* testimonial */
+.testi{
+    width: 100%;
+    margin: 2em 0 1em 0;
+}
+.testi p{
+    width: 90%;
+    margin: 1em auto;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+.cards{
+    width: 90%;
+    max-width: 1088px;
+    margin: 2em auto;
+    box-sizing: border-box;
+    background-color: white;
+    box-shadow: 0 1px 35px var(--light-color) ;
+}
+.cards img{
+    width: 100%;
+}
+.cards p{
+    width: 90%;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--text-color);
+}
+.cards-p{
+    width: 90%;
+    text-align:left;
+    line-height: 1.4em;
+    padding-bottom: 1em;
+}
+
+/* .button-links */
+.container-btn{
+    width: 100%;
+    margin: 1em auto;
+}
+.container-btn h1{
+    padding: 1em auto;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+.container-btn ul{
+    text-align: center;
+}
+.container-btn ul li a{
+    text-decoration: none;
+}
+#link-btn{
+    margin: 1em auto;
+    padding: .5em ;
+    width: 85%;
+    display:flex;
+    background: var(--light-color);
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    letter-spacing: .1em;
+    justify-content: center;
+    align-items: center;
+}
+#link-btn svg{
+    width: 20%;
+}
+
+#link-btn:hover,#link-btn:focus{
+    background-color: var(--primary-color);
+    color: var(--body-color);
+}
+#link-btn:hover svg,#link-btn:focus svg{
+    fill: var(--body-color);
+}
+
+/* footer */
+
+footer{
+    width: 100%;
+    background-color: var(--light-color);
+}
+.footer-container{
+    width: 100%;
+    margin-top: 1em;
+
+}
+.footer-container p{
+    padding: 2em 1em 1.5em 1.5em;
+    text-align: left;
+    font-weight: 300;
+    line-height: 2em;
+    color: var(--primary-color);
+}
+.footer-container a {
+    text-decoration: none;
+}
+.footer-container a h2{
+    color: var(--primary-color);
+    text-align: center;
+font-weight: 700;
+line-height: 1.6em;
+font-size: 1.1rem;
+}
+
+.footer-container h6{
+    text-align: center;
+font-weight: 700;
+padding-top:1.8em ;
+padding-bottom: 1.5em;
+font-size: .9rem;
+color: var(--text-color);
+}
+
+.footer-container ul li a{
+padding-left:1.5em ;
+line-height: 2em;
+color: var(--secondar-color);
+}
+.footer-container h5{
+    text-align: center;
+    font-weight: 700;
+    padding-top:1.8em ;
+    padding-bottom: 1.5em;
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+/* links */
+.links{
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 0 2em 0;
+    text-align: left;
+}
+.links a{
+    text-decoration: none;
+    color: var(--text-color);
+    padding: .5em .5em .5em .5em;
+    line-height: 2em;
+}
+.menu-btn span,.login-btn span{
+    display: none;
+}
+.big-img{
+    display: none;
+}
+/* responsive for fold devices */
+
+@media screen and (max-width:320px){
+    main p{
+        font-weight: 600;
+    }
+    main h2{
+        margin: 1.5em .8em;
+    }
+    .svg{
+        width: 85%;
+    }
+    #apple-logo{
+        width: 10%;
+    }
+    #google-logo{
+        width: 28%;
+    }
+    #microsoft-logo{
+        width: 40%;
+    }
+    #amazon-logo{
+        width: 35%;
+    }
+    .cards p{
+        font-size: 1.2rem;
+    }
+    .links{
+        width: 80%;
+    }
+    .links a{
+        padding: .3em;
+    }
+   #link-btn svg{
+    width: 50%;
+    }
+    .navbar form{
+        width: 92%;
+    }
+}
+
+@media screen and (min-width:500px) {
+    .logo{
+        width: 30%;
+    }
+    .nav-btn button{
+        border: .1em solid white;
+    }
+    main h2{
+        font-size: 2.2rem;
+    }
+    main p{
+        font-size: 1.4rem;
+    }
+     .svg{
+        width: 90%;
+        display: flex;
+        margin: 0 auto;
+    }
+    .btn button{
+        background-image:linear-gradient(#FEC647,#ffb300);
+        border: .1em solid #ffb300;
+        letter-spacing: .1em;
+    }
+    .seen p{
+        font-size: 3rem;
+    }
+    .testi p{
+        width: 100%;
+        font-size: 2.8rem;
+        line-height: 1em;
+    }
+    .cards{
+        width: 65%;
+        text-align: center;
+    }
+    
+    .cards p{
+        width: 85%;
+        font-size: 1.2rem;
+        text-align: left;
+        line-height: 1.5em;
+    }
+    .container-btn h1{
+        font-size: 1.9rem;
+    }
+    #link-btn{
+        width: 93%;
+        display: flex;
+        justify-content: space-around;
+    }
+    #link-btn svg{
+        width: 10%;
+    }
+   
+    #link-btn p{
+        width: 70%;
+    }
+    .links{
+        width: 85%;
+    }
+    .footer-container ul{
+        width: 100%;
+        display: flex;
+    }
+    .col1,.col2{
+        width: 85%;
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width:769px) {
+    .menu-btn i,.login-btn i{
+        display: none;
+    }
+    .menu-btn span,.login-btn span{
+        display: block;
+    }
+    .nav-btn button{
+        width: 4.2em;
+    }
+    #active-btn{
+        width: 6em;
+        letter-spacing: .1em;
+    }
+    .logo img{
+        width: 90%;
+    }
+    main{
+        width: 80%;
+        margin: 4em auto;
+        margin-bottom: 2em;
+    }
+    main h2{
+        margin: 1em 0;
+        font-size: 2.5rem;
+    }
+    main p{
+        margin: 1em 0;
+
+    }
+    .svg{
+        width: 80%;
+    }
+    .btn button{
+        width: 60%;
+        letter-spacing: .2em;
+    }
+    .cards{
+        width: 55%;
+    }
+    #link-btn{
+        width: 75%;
+    }
+    .footer-container p{
+        padding: 2em 2em;
+    }
+    .footer-container a{
+        text-decoration: underline;
+    }
+    .links{
+        text-align: center;
+    }
+    
+    .col1,.col2{
+        width: 80%;
+        margin: 0 auto;
+    }
+   ul .col1, ul .col2{
+        width: 40%;
+        margin: 0 auto;
+    }
+   .sidenavbar{
+    width: 100%;
+    display: flex;
+    
+   }
+   header{
+    background-color: transparent;
+   }
+   .side{
+    width: 70%;
+    background-color: transparent;
+   }
+   .navbar{
+    width: 30%;
+    background-color: #0a0a23;
+    margin: 0;
+    padding: 1.5em;
+   }
+}
+
+@media screen and (min-width:1024px) {
+    .logo img{
+        width: 70%;
+    }
+    main h2{
+        font-size: 2.8rem;
+    }
+    #apple-logo{
+        width: 5%;
+    }
+    #google-logo{
+        margin-left: 3em;
+        width: 15%;
+    }
+    #microsoft-logo{
+        margin-left: 3em;
+        width: 20%;
+    }
+    #spotify-logo{
+        width: 20%;
+        margin-left: 3em;
+    }
+    #amazon-logo{
+        width: 20%;
+        margin-left: 3em;
+    }
+    .btn button{
+        width: 45%;
+        font-size: 1.6rem;
+    }
+    .btn{
+        margin: 2em auto;
+    }
+    .seen{
+        text-align: center;
+    }
+    .seen p{
+        font-size: 2.6rem;
+    }
+    .seen svg{
+        width: 55%;
+    }
+    .cards{
+        display: flex;
+        width: 85%;
+        margin-bottom: 4em;
+    }
+    #link-btn{
+        width: 60%;
+        margin: .6em auto;
+        font-weight:600 ;
+    }
+    #link-btn svg{
+        width: 9%;
+    }
+    .footer-container p{
+        padding: 3em 6em;
+    }
+    .footer-container ul{
+        width: 80%;
+        margin: 0 auto;
+    }
+   
+}
+
+@media screen and (min-width:1200px) {
+    .logo img{
+        width: 50%;
+        max-width: 185px;
+    }
+    main,.svg{
+        max-width: 1024px;
+    }
+  
+    .links{
+        width: 100%;
+    }
+    .row {
+        display: flex;
+    }
+    .col1{
+        width: 50%;
+    }
+    .col2{
+        width: 50%;
+    }
+    ul .col1, ul .col2{
+        width: 50%;
+    }
+    .big-img{
+        display: block;
+        width: 60%;
+        max-width: 768px;
+        margin: 2.5em auto;
+    }
+    .big-img img{
+        width: 100%;
+    }
+    .big-img p{
+        color: #0a0a23;
+        text-align: center;
+        padding-top: 1em;
+        font-size: 1.2rem;
+        font-weight: 600;
+        letter-spacing: .05em;
+    }
+}
